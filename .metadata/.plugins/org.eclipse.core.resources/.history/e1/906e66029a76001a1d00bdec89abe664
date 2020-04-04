@@ -1,0 +1,15 @@
+package model.entities;
+
+public class Programador extends Funcionario{
+
+	public Programador(String nome, Double salario) {
+		super(nome, salario);
+	}
+
+	@Override
+	public void aumentaSalario() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

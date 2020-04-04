@@ -1,0 +1,38 @@
+package application;
+
+import java.util.Scanner;
+
+import model.entities.Funcionario;
+import model.entities.Gerente;
+
+public class Program {
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Funcionario gerent = null;
+		Funcionario program = null;
+		
+		System.out.println("Bem vindo ao sistema de cadastro de Funcionários!");
+		
+		System.out.println("Cadastro de Gerente: ");
+		System.out.print("Informe o nome: ");
+		gerent.setNome(sc.nextLine());
+		System.out.print("Informe o salário: ");
+		gerent.setSalario(sc.nextDouble());
+		
+		gerent = new Gerente(gerent.getNome(), gerent.getSalario());
+		
+		System.out.println("Cadastro de Programador: ");
+		System.out.print("Informe o nome: ");
+		gerent.setNome(sc.nextLine());
+		System.out.print("Informe o salário: ");
+		gerent.setSalario(sc.nextDouble());
+		
+		
+		sc.close();
+		
+	}
+
+}

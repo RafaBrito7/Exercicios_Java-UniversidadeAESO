@@ -1,0 +1,23 @@
+package application;
+
+import java.util.Scanner;
+
+import model.entities.Funcionario;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Funcionario gerent = null;
+		Funcionario program = null;
+		
+		System.out.print("Informe o nome: ");
+		gerent.setNome(sc.nextLine());
+		System.out.print("Informe o salário: ");
+		gerent.setSalario(sc.nextDouble());
+		
+		
+	}
+
+}

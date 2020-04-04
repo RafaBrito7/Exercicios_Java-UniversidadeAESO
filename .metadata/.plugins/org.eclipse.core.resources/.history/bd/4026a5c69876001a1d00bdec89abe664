@@ -1,0 +1,8 @@
+package model.entities;
+
+public class Funcionario {
+	private String nome;
+	private Double salario;
+	
+
+}
