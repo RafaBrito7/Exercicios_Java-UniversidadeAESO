@@ -8,6 +8,7 @@ import model.entities.Programador;
 
 public class Program {
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 	

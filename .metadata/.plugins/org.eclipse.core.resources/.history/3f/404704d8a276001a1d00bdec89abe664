@@ -8,8 +8,8 @@ public class Programador extends Funcionario{
 
 	@Override
 	public Double aumentaSalario() {
-		double salarioNovo = (super.getSalario() * 0.1) + super.getSalario();
-		return salarioNovo;
+		double salarioNo = (super.getSalario() * 0.1) + super.getSalario();
+		return salarioNo;
 	}
 	
 	@Override

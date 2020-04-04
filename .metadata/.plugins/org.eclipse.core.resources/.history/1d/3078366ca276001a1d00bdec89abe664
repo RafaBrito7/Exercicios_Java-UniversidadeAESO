@@ -8,6 +8,7 @@ import model.entities.Programador;
 
 public class Program {
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 	
@@ -21,15 +22,14 @@ public class Program {
 		nome = sc.nextLine();
 		System.out.print("Informe o salário: ");
 		salario = sc.nextDouble();
-		Funcionario gerent = new Gerente(nome,salario);
+		Funcionario gerent = new Gerente(gerent.getNome(), gerent.getSalario());
 		
 		System.out.println("Cadastro do [Programador] ");
-		sc.nextLine();
 		System.out.print("Informe o nome: ");
 		nome = sc.nextLine();
 		System.out.print("Informe o salário: ");
-		salario = sc.nextDouble();
-		Funcionario program = new Programador(nome,salario);
+		program.setSalario(sc.nextDouble());
+		Funcionario program = new Programador(program.getNome(), program.getSalario());
 		
 		System.out.println("Escolha o que você deseja fazer: ");
 		System.out.println("[0] Imprimir Dados");

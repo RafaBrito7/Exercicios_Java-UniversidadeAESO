@@ -8,7 +8,8 @@ public class Gerente extends Funcionario{
 
 	@Override
 	public Double aumentaSalario() {
-		return super.getSalario() * 0.1;
+		double salarioNovo = (super.getSalario() * 0.1) + super.getSalario();
+		return salarioNovo;
 	}
 	
 	@Override
