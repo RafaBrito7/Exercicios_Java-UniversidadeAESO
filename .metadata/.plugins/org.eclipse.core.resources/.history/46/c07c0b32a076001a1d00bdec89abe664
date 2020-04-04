@@ -1,14 +1,14 @@
 package model.entities;
 
-public class Gerente extends Funcionario{
+public class Programador extends Funcionario{
 
-	public Gerente(String nome, Double salario) {
+	public Programador(String nome, Double salario) {
 		super(nome, salario);
 	}
 
 	@Override
-	public Double aumentaSalario() {
-		return super.getSalario() * 0.1;
+	public void aumentaSalario() {
+		super.setSalario(getSalario() * 0.2);
 	}
 	
 	@Override
@@ -17,10 +17,8 @@ public class Gerente extends Funcionario{
 		
 		sb.append("Funcionário " + getNome());
 		sb.append(", Salário de R$" + getSalario());
-		sb.append(" - Função: Gerente");
+		sb.append(" - Função: Programador");
 		return sb.toString();
 	}
-	
-	
 
 }

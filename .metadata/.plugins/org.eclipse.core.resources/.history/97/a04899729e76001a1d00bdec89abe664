@@ -26,8 +26,15 @@ public abstract class Funcionario {
 	}
 	
 
-	public abstract Double aumentaSalario();
+	public abstract void aumentaSalario();
 	
-	public abstract String toString();
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("Funcionário " + getNome());
+		sb.append(", Salário de R$" + getSalario());
+		sb.append(" - Função: Gerente");
+		return sb.toString();
+	}
 	
 }

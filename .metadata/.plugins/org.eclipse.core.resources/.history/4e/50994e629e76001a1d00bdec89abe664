@@ -26,8 +26,6 @@ public abstract class Funcionario {
 	}
 	
 
-	public abstract Double aumentaSalario();
-	
-	public abstract String toString();
+	public abstract void aumentaSalario();
 	
 }

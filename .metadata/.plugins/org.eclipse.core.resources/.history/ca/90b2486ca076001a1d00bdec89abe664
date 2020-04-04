@@ -16,14 +16,14 @@ public class Program {
 		
 		System.out.println("Bem vindo ao sistema de cadastro de Funcionários!");
 		
-		System.out.println("Cadastro do [Gerente] ");
+		System.out.println("Cadastro de Gerente: ");
 		System.out.print("Informe o nome: ");
 		gerent.setNome(sc.nextLine());
 		System.out.print("Informe o salário: ");
 		gerent.setSalario(sc.nextDouble());
 		gerent = new Gerente(gerent.getNome(), gerent.getSalario());
 		
-		System.out.println("Cadastro do [Programador] ");
+		System.out.println("Cadastro de Programador: ");
 		System.out.print("Informe o nome: ");
 		program.setNome(sc.nextLine());
 		System.out.print("Informe o salário: ");
@@ -55,11 +55,10 @@ public class Program {
 			
 			if (decisao == 0) {
 				gerent.setSalario(gerent.aumentaSalario());
-				System.out.println("Salário Atualizado: R$" + gerent.getSalario());
+				System.out.println(gerent.getSalario());
 			} 
 			else if(decisao == 1) {
-				program.setSalario(program.aumentaSalario());
-				System.out.println("Salário Atualizado: R$" + program.getSalario());
+				System.out.println(program.toString());
 			}else
 				System.out.println("Erro! Número Inválido!");
 		}

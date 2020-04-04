@@ -7,8 +7,18 @@ public class Programador extends Funcionario{
 	}
 
 	@Override
-	public void aumentaSalario() {
-		super.setSalario(getSalario() * 0.2);
+	public Double aumentaSalario() {
+		return super.getSalario() * 0.1;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("Funcionário " + getNome());
+		sb.append(", Salário de R$" + getSalario());
+		sb.append(" - Função: Programador");
+		return sb.toString();
 	}
 
 }

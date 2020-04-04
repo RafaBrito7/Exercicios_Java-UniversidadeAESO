@@ -7,16 +7,14 @@ public class Gerente extends Funcionario{
 	}
 
 	@Override
-	public Double aumentaSalario() {
-		return super.getSalario() * 0.1;
+	public void aumentaSalario() {
+		super.setSalario(+ super.getSalario() * 0.1);
 	}
 	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("Funcionário " + getNome());
-		sb.append(", Salário de R$" + getSalario());
 		sb.append(" - Função: Gerente");
 		return sb.toString();
 	}
