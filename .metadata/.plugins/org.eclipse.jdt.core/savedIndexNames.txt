@@ -1,3 +1,5 @@
 INDEX VERSION 1.131+D:\Documentos\_DesenvolvedorArquivos\_Exercicios Java - Faculdade AESO\.metadata\.plugins\org.eclipse.jdt.core
+1766659711.index
 2834589300.index
+1215305860.index
 1064773650.index
